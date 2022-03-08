@@ -1,0 +1,35 @@
+:root {
+    --bs-body-bg: #fff;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --font-au-color: 0, 61, 115
+}
+
+@font-face {
+    font-family: AUPassataBold;
+    src: url("AUPassata_Bold.ttf");
+}
+
+@font-face {
+    font-family: AUPassataRegular;
+    src: url("AUPassata_Rg.ttf");
+}
+
+.font-au-bold {
+    font-family: AUPassataBold, sans-serif;
+    color: rgb(var(--font-au-color));
+}
+
+.font-au {
+    font-family: AUPassataRegular, sans-serif;
+    color: rgb(var(--font-au-color));
+}
+
+.btn-outline-dark {
+    background: var(--bs-body-bg);
+    color: rgb(var(--font-au-color));
+    border: none;
+}
+
+.btn-outline-dark:hover {
+    background: rgb(var(--font-au-color));
+}
