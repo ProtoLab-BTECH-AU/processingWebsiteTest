@@ -5,22 +5,19 @@
 }
 
 @font-face {
-    font-family: AUPassataBold;
+    font-family: AUPassata;
+    font-weight: bold;
     src: url("AUPassata_Bold.ttf");
 }
 
 @font-face {
-    font-family: AUPassataRegular;
+    font-family: AUPassata;
+    font-weight: normal;
     src: url("AUPassata_Rg.ttf");
 }
 
-.font-au-bold {
-    font-family: AUPassataBold, sans-serif;
-    color: rgb(var(--font-au-color));
-}
-
 .font-au {
-    font-family: AUPassataRegular, sans-serif;
+    font-family: AUPassata, sans-serif;
     color: rgb(var(--font-au-color));
 }
 
