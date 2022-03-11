@@ -30,3 +30,14 @@
 .btn-outline-dark:hover {
     background: rgb(var(--font-au-color));
 }
+
+/*noinspection CssUnusedSymbol*/
+.p5Canvas {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    /*noinspection CssUnknownProperty*/
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
