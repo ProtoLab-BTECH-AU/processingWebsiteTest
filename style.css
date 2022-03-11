@@ -5,19 +5,34 @@
 }
 
 @font-face {
-    font-family: AUPassata;
-    font-weight: bold;
-    src: url("AUPassata_Bold.ttf");
+    font-family: 'AU Passata';
+    font-display: swap;
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.eot");
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.eot?#iefix") format("embedded-opentype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.woff2") format("woff2"), url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.woff") format("woff"), url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.ttf") format("truetype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_light-webfont.svg#AUPassataLight") format("svg");
+    font-weight: 200;
+    font-style: normal
 }
 
 @font-face {
-    font-family: AUPassata;
-    font-weight: normal;
-    src: url("AUPassata_Rg.ttf");
+    font-family: 'AU Passata';
+    font-display: swap;
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.eot");
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.eot?#iefix") format("embedded-opentype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.woff2") format("woff2"), url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.woff") format("woff"), url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.ttf") format("truetype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_rg-webfont.svg#AUPassataRegular") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'AU Passata';
+    font-display: swap;
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.eot");
+    src: url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.woff2") format("woff2"), url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.woff") format("woff"), url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.ttf") format("truetype"), url("https://fonts.au.dk/fonts/autohinting/aupassata_bold-webfont.svg#AUPassataBold") format("svg");
+    font-weight: 700;
+    font-style: normal
 }
 
 .font-au {
-    font-family: AUPassata, sans-serif;
+    font-family: "AU Passata", sans-serif;
     color: rgb(var(--font-au-color));
 }
 
