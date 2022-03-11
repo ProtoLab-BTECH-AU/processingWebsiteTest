@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
     <script>const $ = (selector) => document.querySelector(selector);</script>
 </head>
-<body class="bg-body overflow-hidden font-au">
+<body class="bg-body font-au">
 
 <div class="ms-5 position-absolute" id="headers">
     <h1 style="font-size: 7.2rem"><b>ARTIG</b></h1>
@@ -34,7 +34,7 @@
     </div>
     <span class="btn btn-sm btn-outline-dark"
           onclick="const e = $('#codeContainer'); e.hidden = !e.hidden">View Code</span>
-    <span class="btn btn-sm btn-outline-dark" onclick="resizeCanvas(innerWidth, innerHeight)">Reset</span>
+    <span class="btn btn-sm btn-outline-dark" onclick="resizeCanvas(innerWidth, max(document.getElementById("headers").getBoundingClientRect().height, innerHeight))">Reset</span>
 </div>
 
 <script id="sketch" src="sketch.js"></script>

@@ -7,7 +7,7 @@ function drawPoint(point) {
 }
 
 function setup() {
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(innerWidth, max(document.getElementById("headers").getBoundingClientRect().height, innerHeight));
   background(0, 0, 0, 0);
   noStroke();
 }
@@ -21,6 +21,6 @@ function draw() {
 }
 
 window.onresize = () => {
-  resizeCanvas(innerWidth, innerHeight);
+  resizeCanvas(innerWidth, max(document.getElementById("headers").getBoundingClientRect().height, innerHeight));
   points.map(drawPoint);
 };
