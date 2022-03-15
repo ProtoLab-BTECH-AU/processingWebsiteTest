@@ -28,18 +28,18 @@
         </div>
         <div class="col-12 col-lg-5">
             <div class="border rounded">
-            <div class="position-absolute ms-1">
+                <div class="position-absolute ms-1">
                 <span class="btn btn-sm btn-outline-dark"
                       onclick="const e = $('#codeContainer'), c = $('#canvasContainer'); c.hidden = !(e.hidden = !e.hidden)">View Code</span>
-                <span class="btn btn-sm btn-outline-dark"
-                      onclick="if (canvas) resizeCanvas(...size(canvas.elt.parentElement))">Reset</span>
-            </div>
-            <div class="ms-1" id="codeContainer" hidden>
-                <span class="btn btn-sm btn-outline-dark mt-5"
+                    <span class="btn btn-sm btn-outline-dark"
+                          onclick="if (canvas) resizeCanvas(...size(canvas.elt.parentElement))">Reset</span>
+                </div>
+                <div class="ms-1" hidden id="codeContainer">
+                    <span class="btn btn-sm btn-outline-dark mt-5"
                       onclick="navigator.clipboard.writeText($('#code').innerText)">Copy</span>
-                <pre class="font-monospace overflow-scroll p-2" id="code"></pre>
-            </div>
-            <main id="canvasContainer" style="height: 80vh; max-height: 80vh; touch-action: none"></main>
+                    <pre class="font-monospace overflow-scroll p-2" id="code"></pre>
+                </div>
+                <main id="canvasContainer" style="height: 80vh; max-height: 80vh; touch-action: none"></main>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
 <script id="sketch" src="sketch.js"></script>
 
 <script>
-  fetch($("#sketch").src).then(res => res.text()).then(code => $("#code").innerText = code);
+  fetch($("#sketch").src).then(res => res.text()).then(code => $("#code").innerText = code.substring(0, 100));
 </script>
 </body>
 </html>
