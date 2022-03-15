@@ -48,7 +48,7 @@
 <script id="sketch" src="sketch.js"></script>
 
 <script>
-  fetch($("#sketch").src).then(res => res.text()).then(code => $("#code").innerText = code.substring(0, 100));
+  fetch($("#sketch").src).then(res => res.text()).then(code => $("#code").innerText = code);
 </script>
 </body>
 </html>
