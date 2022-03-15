@@ -1,4 +1,5 @@
 let points = [];
+let canvas;
 
 function drawPoint(point) {
   let size = max(width * .04, height * .04);
@@ -7,12 +8,13 @@ function drawPoint(point) {
 }
 
 function setup() {
-  createCanvas(innerWidth, max(document.getElementById("headers").getBoundingClientRect().height, innerHeight));
+  canvas = createCanvas(...size($("#canvasContainer")));
   background(0, 0, 0, 0);
   noStroke();
 }
 
 function draw() {
+  if (canvas.elt.parentElement.hidden) return
   if (mouseIsPressed) {
     let point = [mouseX / width, mouseY / height];
     points.push(point);
@@ -21,6 +23,6 @@ function draw() {
 }
 
 window.onresize = () => {
-  resizeCanvas(innerWidth, max(document.getElementById("headers").getBoundingClientRect().height, innerHeight));
+  resizeCanvas(...size(canvas.elt.parentElement));
   points.map(drawPoint);
 };
