@@ -31,9 +31,22 @@
     font-style: normal
 }
 
-.font-au {
+body {
     font-family: "AU Passata", sans-serif;
     color: rgb(var(--font-au-color));
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 7.2rem;
+}
+
+.font-monospace {
+    font-size: initial;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 .btn-outline-dark {
