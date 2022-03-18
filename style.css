@@ -1,7 +1,8 @@
 :root {
     --bs-body-bg: #fff;
     --bs-body-bg-rgb: 255, 255, 255;
-    --font-au-color: 0, 61, 115
+    --font-au-color: 0, 61, 115;
+    --background-color: #dee2e6;
 }
 
 @font-face {
@@ -34,7 +35,7 @@
 body {
     font-family: "AU Passata", sans-serif;
     color: rgb(var(--font-au-color));
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -50,13 +51,17 @@ h1 {
 }
 
 .btn-outline-dark {
-    background: var(--bs-body-bg);
+    background: var(--background-color);
     color: rgb(var(--font-au-color));
     border: none;
 }
 
 .btn-outline-dark:hover {
     background: rgb(var(--font-au-color));
+}
+
+.bg-custom {
+    background: var(--background-color);
 }
 
 /*noinspection CssUnusedSymbol*/
