@@ -37,7 +37,13 @@
                 </div>
                 <div class="ms-1" hidden id="codeContainer">
                     <span class="btn btn-sm btn-outline-dark mt-5"
-                      onclick="navigator.clipboard.writeText($('#code').innerText)">Copy</span>
+                          onclick="navigator.clipboard.writeText($('#code').innerText); const c = $('#copiedBanner'); c.style.opacity = '100'; setTimeout(() => c.style.opacity = '0', 500)">
+                        Copy
+                    </span>
+                    <span class="btn btn-sm btn-outline-dark mt-5 disabled"
+                          id="copiedBanner"
+                          onclick="navigator.clipboard.writeText($('#code').innerText)"
+                          style="transition: ease-out 750ms; opacity: 0;">Copied!</span>
                     <pre class="font-monospace overflow-scroll p-2" id="code"></pre>
                 </div>
                 <main id="canvasContainer" style="height: 80vh; max-height: 80vh; touch-action: none"></main>
