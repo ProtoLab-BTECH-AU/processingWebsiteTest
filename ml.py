@@ -1,5 +1,5 @@
 preprocessing = ColumnTransformer(
-    transformers=[("num", numerical_pipe, numerical_columns)],
+    transformers=[("num", n_pipe, n_cols)],
     remainder="passthrough")
 reg_full = Pipeline([
     ("preprocess", preprocessing),
