@@ -92,3 +92,27 @@ h1 {
     -ms-user-select: none !important;
     user-select: none !important;
 }
+
+#code {
+    color: var(--au-color-1);
+}
+
+#code equal {
+    color: var(--au-color-3);
+}
+
+#code argument {
+    color: var(--au-color-1-comp);
+}
+
+#code variable {
+    color: inherit;
+}
+
+#code function {
+    color: var(--au-color-4)
+}
+
+#code string {
+    color: var(--au-color-5)
+}
