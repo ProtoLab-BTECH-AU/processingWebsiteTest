@@ -79,8 +79,8 @@
   function highlight(elem) {
     elem.innerHTML = elem.innerText
       .replace(/([a-z0-9_]+)(?=\()/gi, "<function>$1</function>")
-      .replace(/(\S+)(=)/g, "<argument>$1</argument><equal>&#x3D;</equal>")
-      .replace(/^((?:[ ]{4})*)(\S+)( = )/gm, "$1<variable>$2</variable><equal> &#x3D; </equal>")
+      .replace(/(\S+)(=)/g, "<argument>$1</argument><equal>&equals;</equal>")
+      .replace(/^((?:[ ]{4})*)(\S+)( = )/gm, "$1<variable>$2</variable><equal> &equals; </equal>")
       .replace(/("[^"]+")/g, "<string>$1</string>")
   }
 
