@@ -47,6 +47,7 @@
 <script>
   const $ = (selector) => document.querySelector(selector);
   const size = (elem) => [elem.getBoundingClientRect().width, elem.getBoundingClientRect().height];
+  const codeURL = "ml.py"
 
   let points = [];
   let pointsDrawn = [];
@@ -84,7 +85,7 @@
       .replace(/("[^"]+")/g, "<string>$1</string>")
   }
 
-  fetch("ml.py")
+  fetch(codeURL)
     .then((response) => response.text())
     .then((code) => {
       const f = (slice, elem) => {
