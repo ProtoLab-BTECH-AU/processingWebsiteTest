@@ -86,10 +86,10 @@
     .then((code) => {
       const f = (slice, elem) => {
         if (!slice.length) return setTimeout(() => {
-          points = []
-          pointsDrawn = []
-          window.onresize(null)
-          elem.innerText = elem.innerHTML = ""
+          points = [];
+          pointsDrawn = [];
+          window.onresize(null);
+          elem.innerText = elem.innerHTML = "";
           f(code, elem);
         }, 2000);
         const seedX = Math.random(), seedY = Math.random();
